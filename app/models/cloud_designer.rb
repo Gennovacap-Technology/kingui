@@ -8,6 +8,7 @@ class CloudDesigner
 
   def component
     self.class.get("/api/v1/component/[component]", @options)
+    self.class.post("/api/v1/component/[component]", @options)
   end
 
   def components
@@ -20,6 +21,7 @@ class CloudDesigner
 
   def aws_login
     self.class.get("/aws/login", @options)
+    self.class.post("/aws/login", @options)
   end
 
   def aws_logout
