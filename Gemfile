@@ -33,6 +33,8 @@ gem 'bootstrap-material-design'
 gem 'thin'
 
 
+gem 'httparty'
+
 
 group :development, :test do
   gem 'byebug'
